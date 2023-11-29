@@ -8,12 +8,12 @@ const Calculator = () => {
   const [discount, setDiscount] = useState(0)
 
   return (
-    <div className='w-[30rem]'>
+    <div className='max-w-[30rem] p-6'>
       <div>
         <label className='uppercase text-sm tracking-wider opacity-75 text-center w-full block'>
           Original price
         </label>
-        <div className='text-2xl font-bold flex items-center gap-2'>
+        <div className='text-xl font-bold flex items-center gap-2'>
           $
           <Input
             type="number"
@@ -28,7 +28,7 @@ const Calculator = () => {
         <label className='uppercase text-sm tracking-wider opacity-75 text-center w-full block'>
           Sale price
         </label>
-        <div className='text-2xl font-bold flex items-center gap-2'>
+        <div className='text-xl font-bold flex items-center flex-row gap-2'>
           $
           <Input
             type="number"
@@ -42,7 +42,7 @@ const Calculator = () => {
       <Button size={'lg'} onClick={() => setDiscount(100 - (salePrice / originalPrice) * 100)} className='w-full mt-6'> Calculate </Button>
 
       <div className='p-4 rounded-lg bg-slate-100 dark:bg-slate-900 mt-12'>
-        <h2 className='text-3xl font-bold text-center'>Discount: {discount.toPrecision(2)}%</h2>
+        <h2 className='text-3xl font-bold text-center'>Discount: {discount.toFixed()}%</h2>
       </div>
       
     </div>

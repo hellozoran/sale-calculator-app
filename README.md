@@ -1,6 +1,6 @@
-# React + TypeScript + Vite
+# Simple Sale Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Super quick 15 min React + TypeScript + Tailwind + ShadCN UI app because its faster than using a calculator.
 
 Currently, two official plugins are available:
 
